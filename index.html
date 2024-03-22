@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+  <div class="grid">
+    <aside class="sidenav">
+     
+      <div class="row row--align-v-center row--align-h-center">
+        <ul class="navList">
+          <li class="navList__heading">Web Links<i class="fas fa-link"></i></li>
+          <li>
+            <a href="https://www.simplicity.web.za/home.html">
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"><i class="fas fa-globe"></i></span>
+                <span class="navList__subheading-title">Simplicity</span>
+              </div>
+            </a>
+            <a href="https://www.hyphenpda.co.za">
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"><i class="fas fa-globe"></i></span>
+                <span class="navList__subheading-title">Hyphen PDA</span>
+              </div>
+            </a>
+            <a href="https://portal.hyphen.co.za/hyphenpda/#/login">
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"><i class="fas fa-globe"></i></span>
+                <span class="navList__subheading-title">Hyphen Portal</span>
+              </div>
+            </a>
+            <a onclick="console.log(String.raw`cla:event|DHS`)">
+              <div class="navList__subheading row row--align-v-center" >
+                <span class="navList__subheading-icon"><i class="fas fa-globe"></i></span>
+                <span class="navList__subheading-title">Debt Help System</span>
+              </div>
+            </a>
+          </li>
+          <li class="navList__heading">Videos<i class="fab fa-youtube"></i></li>
+          <li>
+            <a onclick="console.log(String.raw`cla:event|opentraining|simptraining.html`)">
+              <div class="navList__subheading row row--align-v-center">
+                <span class="navList__subheading-icon"><i class="fas fa-question"></i></span>
+                <span class="navList__subheading-title">Training Videos</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="main-header">
+        <div class="main-header__intro-wrapper">
+       
+          <div class="quickview">
+            <div class="quickview__item">
+              <div class="quickview__item-description">
+                <i class="fas fa-code-branch"></i>
+                <span class="text-light" id="cla_testver">Current Version</span>
+              </div>
+              <div class="quickview__item-total" id="cla_version">7.40.50</div>
+          
+            </div>
+            <div class="quickview__item">
+              <div class="quickview__item-description">
+                <i class="fas fa-code-branch"></i>
+                <span class="text-light" id="cla_relver">Latest Version</span>
+              </div>
+              <div class="quickview__item-total" id="cla_newversion">7.45.51</div>
+          
+            </div>
+          
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="card__warning" id="urgent_message">
+        <div class="card__header">
+          <div class="card__warning__header-title text-light"><strong>Urgent Notification From Bitech</strong>
+          </div>
+        </div>
+        <div class="card__warning__body">
+          <p><pre id="cla_urgent"></pre></p>
+        </div>
+      </div>
+      <div class="alert alert-danger" role="alert" id="backup_message">
+        <i class="fas fa-exclamation-circle"></i>
+        <strong>Backup Warning</strong>
+        <p><pre id="cla_backupwarn"></pre></p>
+      </div>
+      <div class="alert alert-test" role="alert" id="test_message">
+        <i class="fas fa-exclamation-circle"></i>
+        <strong style="font-size: 23px;">Test System</strong>
+        <p id="cla_testwarn">You are currently working on your test system.</p>
+      </div>
+
+      <div class="alert alert-success" role="alert" id="upgrade_message">
+        <i class="fas fa-exclamation-circle"></i>
+        <strong>Upgrade Scheduled</strong>
+        <p><pre id="cla_upgradesched"></pre></p>
+        <a onclick="console.log(String.raw`cla:event|openhelp|newest-simplicity-version.html`)">Click here to view the
+          full changelog</a>``
+      </div>
+
+      
+      <div class="main__cards">
+        <div class="card events">
+          <div class="card__header">
+            <div class="card__header-title text-light"><strong>New Feature Spotlights</strong>
+            </div>
+          </div>
+          <div class="card__main__newfeatures">
+            <div class="card__row">
+              <div class="card__icon"><i class="far fa-credit-card"></i></div>
+              <div class="card__time">
+
+              </div>
+              <div class="card__detail__newfeatures">
+                <div class="card__source text-bold">NCR Debt Help System</div>
+                <div class="card__description">Gain quick and easy access and use of the NCR Debt Help System (DHS) via Simplicity
+                </div>
+                <div
+                        onclick="console.log(String.raw`cla:event|opentraining|simptraining?ncr-debthelp.html`)"
+                        class="card__note" style=""><i style="color: #27AE60;" class="fas fa-reply"></i> Go to Training
+                </div>
+              </div>
+            </div>
+            <div class="card__row">
+              <div class="card__icon"><i class="fas fa-exchange-alt"></i></div>
+              <div class="card__time">
+
+              </div>
+              <div class="card__detail__newfeatures">
+                <div class="card__source text-bold">Credit Provider Integration</div>
+                <div class="card__description">Request and Receive obligation data directly from the Credit Provider
+                </div>
+                <div
+                  onclick="console.log(String.raw`cla:event|openlinkextern|https://simplicity.web.za/videos/creditproviderdataintegration/creditproviderdataintegration.html`)"
+                  class="card__note" style=""><i style="color: #27AE60;" class="far fa-play-circle"></i> Watch
+                  Video
+                </div>
+              </div>
+            </div>
+            <div class="card__row">
+              <div class="card__icon"><i class="fas fa-globe"></i></div>
+              <div class="card__time">
+
+              </div>
+              <div class="card__detail__newfeatures">
+                <div class="card__source text-bold">Web Based Interface</div>
+                <div class="card__description">The first phase of an ongoing project to migrate Simplicity to the Web
+                </div>
+                <div
+                  onclick="console.log(String.raw`cla:event|openlinkextern|https://simplicity.web.za/videos/featurepreview/featurepreview.html`)"
+                  class="card__note"><i style="color: #27AE60;" class="far fa-play-circle"></i> Watch Video</div>
+              </div>
+            </div>
+            <div class="card__row">
+              <div class="card__icon"><i class="fas fa-book"></i></div>
+              <div class="card__time">
+
+              </div>
+              <div class="card__detail__newfeatures">
+                <div class="card__source text-bold">Workflow Module</div>
+                <div class="card__description">Setup pre-formatted documents, emails, SMS, call scripts, user tasks and
+                  more
+                </div>
+                <div
+                  onclick="console.log(String.raw`cla:event|openlinkextern|https://simplicity.web.za/videos/workflow/workflow.html`)"
+                  class="card__note"><i style="color: #27AE60;" class="far fa-play-circle"></i> Watch Video</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card events">
+          <div class="card__header">
+            <div class="card__header-title text-light">Simplicity <strong>Training</strong>
+            </div>
+          </div>
+          <div class="card__main__newfeatures">
+            <div class="card__row">
+              <div style="background-color: rgb(32, 207, 26);" class="card__icon"><i class="fas fa-star"></i></div>
+              <div class="card__time">
+
+              </div>
+              <div class="card__detail__newfeatures">
+                <div class="card__source text-bold">Simplicity Training: Introduction</div>
+                <div class="card__description">Get started on how to get easy training for Simplicity
+                </div>
+                <div
+                  onclick="console.log(String.raw`cla:event|openlinkextern|https://simplicity.web.za/videos/helpfileaccess/helpfileaccess.html`)"
+                  class="card__note" style=""><i style="color: #27AE60;" class="far fa-play-circle"></i> Watch
+                  Video
+                </div>
+              </div>
+            </div>
+            <div class="card__row">
+              <div style="background-color: rgb(80, 106, 255);" class="card__icon"><i class="fas fa-photo-video"></i></div>
+              <div class="card__time">
+
+              </div>
+              <div class="card__detail__newfeatures">
+                <div class="card__source text-bold">Simplicity Training</div>
+                <div class="card__description">View all of our Simplicity training videos in the Simplicity Help
+                </div>
+                <div
+                  onclick="console.log(String.raw`cla:event|opentraining|simptraining.html`)"
+                  class="card__note"><i style="color: #27AE60;" class="fas fa-reply"></i> Go to Training</div>
+              </div>
+            </div>
+            <div class="card__row">
+              <div style="background-color: coral;" class="card__icon"><i class="far fa-life-ring"></i></div>
+              <div class="card__time">
+
+              </div>
+              <div class="card__detail__newfeatures">
+                <div class="card__source text-bold">Getting Started Guide</div>
+                <div class="card__description">A course to familiarise yourself with the basics of Simplicity
+                </div>
+                <div
+                  onclick="console.log(String.raw`cla:event|openhelp|GettingStarted.html`)"
+                  class="card__note"><i style="color: #27AE60;" class="fas fa-reply"></i> Go to guide</div>
+              </div>
+            </div>
+            <div class="card__row">
+              <div class="card__icon"><i class="fas fa-question"></i></div>
+              <div class="card__time">
+
+              </div>
+              <div class="card__detail__newfeatures">
+                <div class="card__source text-bold">F.A.Q.</div>
+                <div class="card__description">Take a look at the most frequently asked questions about Simplicity
+                </div>
+                <div
+                  onclick="console.log(String.raw`cla:event|openhelp|listoffaqs.html`)"
+                  class="card__note"><i style="color: #27AE60;" class="fas fa-reply"></i> Go to FAQ</div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="card">
+            <div class="documents">
+              <div onclick="console.log(String.raw`cla:event|openlinkextern|https://simplicity.web.za/videos/captureleadsobligations/captureleadsobligations.html`)" class="document">
+                <div class="vid_capture_obl"></div>
+                <div class="document__title">Capture Lead Obligations</div>
+              </div>
+              <div onclick="console.log(String.raw`cla:event|openlinkextern|https://simplicity.web.za/videos/captureleadsinformation/captureleadsinformation.html`)" class="document">
+                <div class="vid_capture_leadinf"></div>
+                <div class="document__title">Capture Lead Information</div>
+              </div>
+              <div onclick="console.log(String.raw`cla:event|openlinkextern|https://simplicity.web.za/videos/captureleads/captureleads.html`)" class="document">
+                <div class="vid_capture_lead"></div>
+                <div class="document__title">Capture Leads</div>
+              </div>
+              <div onclick="console.log(String.raw`cla:event|openlinkextern|https://simplicity.web.za/videos/incomingcomms/incomingcomms.html`)" class="document">
+                <div class="vid_inc_communications"></div>
+                <div class="document__title">Incoming Communications</div>
+              </div>
+              <div class="document" onclick="console.log(String.raw`cla:event|openlinkextern|https://simplicity.web.za/videos/debtreviewtickets/debtreviewtickets.html`)" >
+                <div class="vid_debt_tickets"></div>
+                <div class="document__title">Debt Review Tickets</div>
+              </div>
+              <div class="document" onclick="console.log(String.raw`cla:event|openlinkextern|https://simplicity.web.za/videos/masterdatacompanyparameters/masterdatacompanyparameters.html`)" >
+                <div class="vid_master_data"></div>
+                <div class="document__title">Master Data Training</div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div> <!-- /.main-cards -->
+    </main>
+
+    <footer class="footer">
+      <p><span class="footer__copyright">&copy;</span> 2020 Bitech <span style="color: rgb(11, 89, 179);">Systems</span>
+      </p>
+    </footer>
+  </div>
+  <script>
+    window.onload = function(){
+      console.log("cla:event|ready");
+    };
+    document.getElementById('simpcard').onclick = function () {
+      window.location = "https://simplicity.web.za"
+    };
+    document.getElementById('hyphencard').onclick = function () {
+      window.location = "https://www.hyphenpda.co.za"
+    };
+    document.getElementById('hyphenportcard').onclick = function () {
+      window.location = "https://portal.hyphen.co.za/hyphenpda/#/login"
+    };
+    document.onkeyup = function (e) {
+      if (e.ctrlKey && e.altKey && e.which == 83) {
+        console.log("cla:event|maintain");
+      } else if (e.ctrlKey && e.altKey && e.which == 77) {
+        console.log("cla:event|showmem");
+      } else if (e.ctrlKey && e.altKey && e.which == 87) {
+        console.log("cla:event|simpexternal");
+      } else if (e.ctrlKey && e.altKey && e.which == 68) {
+        console.log("cla:event|demosimp");
+      } else if (e.ctrlKey && e.which == 119) {
+        console.log("cla:event|security");
+      } else if (e.ctrlKey && e.which == 120) {
+        console.log("cla:event|framesecsetup");
+      } else if (e.ctrlKey && e.altKey && e.which == 69) {
+        console.log("cla:event|bitech");
+      }
+    }
+  </script>
+</body>
+
+</html>
