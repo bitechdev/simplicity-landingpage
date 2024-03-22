@@ -3,6 +3,8 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #252C34;
+    overflow: hidden;
   }
   
   a {
@@ -428,6 +430,10 @@ html, body {
     max-height: 0;
   }
   
+  .bodywrap {
+    overflow: auto;
+  }
+
   .main {
     grid-area: main;
     background-color: #252C34;
@@ -449,6 +455,7 @@ html, body {
     background-size: 120px;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: #252C34;
     /* background-image: url("media/topback.jpg"); */
     background-image: url(media/simplogo.png);
     margin-bottom: 20px;
@@ -927,6 +934,7 @@ html, body {
   }
   
   @media only screen and (min-width: 46.875em) {
+
     .grid {
       display: grid;
       grid-template-columns: 240px calc(100% - 240px);

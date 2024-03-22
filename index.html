@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="grid">
+  <div class="grid bodywrap">
     <aside class="sidenav">
      
       <div class="row row--align-v-center row--align-h-center">
@@ -72,15 +72,15 @@
                 <i class="fas fa-code-branch"></i>
                 <span class="text-light" id="cla_testver">Current Version</span>
               </div>
-              <div class="quickview__item-total" id="cla_version">7.40.50</div>
+              <div class="quickview__item-total" id="cla_version">7.40</div>
           
             </div>
             <div class="quickview__item">
               <div class="quickview__item-description">
                 <i class="fas fa-code-branch"></i>
-                <span class="text-light" id="cla_relver">Latest Version</span>
+                <span class="text-light">Latest Version</span>
               </div>
-              <div class="quickview__item-total" id="cla_newversion">7.45.51</div>
+              <div class="quickview__item-total" id="cla_relver">N/A</div>
           
             </div>
           
@@ -286,13 +286,27 @@
     </main>
 
     <footer class="footer">
-      <p><span class="footer__copyright">&copy;</span> 2020 Bitech Systems<span/span>
+      <p><span class="footer__copyright">&copy;</span> 2024 Bitech Systems<span/span>
       </p>
     </footer>
   </div>
   <script>
     window.onload = function(){
       console.log("cla:event|ready");
+      setTimeout(function(){
+        let v1 = document.getElementById('cla_version')
+        let v2 = document.getElementById('cla_relver')
+        if (v1 && v2 && v1.innerText && v2.innerText) {
+          let v1str = v1.innerText.replace('v','')
+          let v2str = v2.innerText.replace('v','')
+          console.log("Versions",v1str,v2str)
+          if (v2str > v1str) {
+            v1.style = 'color: orange;'
+            v1.title = 'A new version is available.'
+          }
+        }     
+      },500)
+
     };
     document.getElementById('simpcard').onclick = function () {
       window.location = "https://simplicity.web.za"
